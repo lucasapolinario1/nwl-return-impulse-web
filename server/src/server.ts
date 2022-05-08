@@ -17,6 +17,6 @@ app.use(routes);
 // PATCH = Atualizar uma informação única de uma entidade
 // DELETE = Deletar uma informação
 
-app.listen(3333, () => {
+app.listen(process.env.PORT || 3333, () => {
     console.log('HTTP server running!');
 });
